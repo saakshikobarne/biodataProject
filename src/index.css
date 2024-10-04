@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes shine {
+    0% {
+      left: -150%;
+    }
+    50% {
+      left: 50%;
+    }
+    100% {
+      left: 150%;
+    }
+  }
+  
+  .shine-effect {
+    position: relative;
+    overflow: hidden; /* Ensure the shine doesn't spill outside */
+  }
+  
+  .shine-effect .shine {
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.1) 100%);
+    animation: shine 1.5s ease-in-out infinite;
+    transform: skewX(-25deg); /* Adds a dynamic angled effect */
+    opacity: 0.6; /* Boost the opacity to make it more visible */
+  }
+  
+  
