@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 function Main() {
     const images = [
-        '/assets/b1.webp',
         '/assets/b2.png',
+        '/assets/b1.webp',
         '/assets/b3.jpg',
     ];
 
