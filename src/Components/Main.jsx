@@ -18,13 +18,13 @@ function Main() {
   };
 
   return (
-    <div className="relative w-full max-w-lg mx-auto overflow-hidden mt-8">
+    <div className="relative w-full max-w-lg mx-auto overflow-hidden mt-2">
       {/* Container to limit the size of the images */}
-      <div className="flex items-center justify-center max-h-80 h-auto max-w-full">
+      <div className="flex items-center justify-center max-h-70 h-auto max-w-full">
         <img 
           src={images[currentIndex]} 
           alt="carousel" 
-          className="w-auto h-full max-h-80 object-contain" // Set max height and contain
+          className="w-auto h-full max-h-64 object-contain" // Set max height and contain
         />
       </div>
       
